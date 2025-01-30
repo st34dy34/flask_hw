@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+
+<h1>{{ name }}</h1>
+<ul>
+  <li>
+    <p><b>Jméno: </b>{{ name }}</p>
+  </li>
+  <li>
+    <p><b>Věk: </b>{{ age }}</p>
+  </li>
+</ul>
+<a href="{{ url_for('user_list')}}">Zpět na seznam uživatelů..</a>
+{% endblock %}
